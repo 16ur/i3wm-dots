@@ -1,0 +1,48 @@
+[colors]
+;background = ${xrdb:color0:#222}
+background = #2E3440
+foreground = #bdc6ce
+
+wm-restack = i3
+
+
+[bar/topright]
+    include-file = ${HOME}/.config/polybar/modules/topright.ini
+
+[bar/center]
+    include-file = ${HOME}/.config/polybar/modules/center.ini
+
+[bar/top]
+    include-file = ${HOME}/.config/polybar/modules/top.ini
+
+
+[module/placeholder]
+type = custom/script
+width = 1
+
+
+# Module topright
+
+[module/pulseaudio]
+    include-file = ${HOME}/.config/polybar/modules/pulseaudio.ini
+
+
+[module/battery]
+    include-file = ${HOME}/.config/polybar/modules/battery.ini
+
+[module/wlan]
+    include-file = ${HOME}/.config/polybar/modules/wlan.ini
+
+# Module Top-left
+
+[module/workspaces]
+    include-file = ${HOME}/.config/polybar/modules/workspaces.ini
+
+
+# Module center
+
+[module/date]
+    include-file = ${HOME}/.config/polybar/modules/date.ini
+
+
+
